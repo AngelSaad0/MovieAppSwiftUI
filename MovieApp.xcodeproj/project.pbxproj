@@ -16,7 +16,6 @@
 		A99CEFB22CA4DA5100926610 /* SignInScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CEFB12CA4DA5100926610 /* SignInScreenView.swift */; };
 		A99CEFB42CA4DA5F00926610 /* SignUpScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CEFB32CA4DA5F00926610 /* SignUpScreenView.swift */; };
 		A99CEFBB2CA4F1FD00926610 /* MovieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CEFBA2CA4F1FD00926610 /* MovieApp.swift */; };
-		A99CEFBD2CA4F21800926610 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CEFBC2CA4F21800926610 /* SceneDelegate.swift */; };
 		A99CEFBF2CA4F24A00926610 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CEFBE2CA4F24A00926610 /* UserData.swift */; };
 		A99CEFCA2CA4FC0D00926610 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A99CEFC92CA4FC0D00926610 /* FirebaseAnalytics */; };
 		A99CEFCC2CA4FC0D00926610 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = A99CEFCB2CA4FC0D00926610 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -40,7 +39,6 @@
 		A99CEFB12CA4DA5100926610 /* SignInScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenView.swift; sourceTree = "<group>"; };
 		A99CEFB32CA4DA5F00926610 /* SignUpScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenView.swift; sourceTree = "<group>"; };
 		A99CEFBA2CA4F1FD00926610 /* MovieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApp.swift; sourceTree = "<group>"; };
-		A99CEFBC2CA4F21800926610 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A99CEFBE2CA4F24A00926610 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		C688997D2CA5109600E1F1B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +84,6 @@
 			children = (
 				C688997D2CA5109600E1F1B1 /* GoogleService-Info.plist */,
 				A99CEFBA2CA4F1FD00926610 /* MovieApp.swift */,
-				A99CEFBC2CA4F21800926610 /* SceneDelegate.swift */,
 				A99CEF9E2CA4C51600926610 /* HomeScreen.swift */,
 				A99CEFBE2CA4F24A00926610 /* UserData.swift */,
 				A99CEFB12CA4DA5100926610 /* SignInScreenView.swift */,
@@ -203,7 +200,6 @@
 			files = (
 				A99CEFBB2CA4F1FD00926610 /* MovieApp.swift in Sources */,
 				A99CEFA62CA4C51800926610 /* Persistence.swift in Sources */,
-				A99CEFBD2CA4F21800926610 /* SceneDelegate.swift in Sources */,
 				A99CEFBF2CA4F24A00926610 /* UserData.swift in Sources */,
 				A99CEF9F2CA4C51600926610 /* HomeScreen.swift in Sources */,
 				A99CEFB22CA4DA5100926610 /* SignInScreenView.swift in Sources */,

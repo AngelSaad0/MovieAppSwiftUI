@@ -20,23 +20,28 @@ struct HomeScreen: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Image("spiderMan")
+                Image(.spiderMan)
                     .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
-
-                VStack(spacing: 30) {
+                    .ignoresSafeArea()
+                VStack(spacing: 20) {
                     Spacer()
-
                     NavigationLink(destination: SignInScreenView()) {
-                        CustomButton(title: "Sign In", action: {})
+                        CustomButton(title: "Sign In", action: {}, backgroundColor: "#BD4925")
                     }
-
-                    CustomButton(title: "Continue with Google") {
+                    Button {
                         signInWithGoogle()
+                    } label: {
+                        HStack {
+                            Image(.google)
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                            Text("Continue with Google")
+
+                        }
                     }
+                    .frame(width: UIScreen.main.bounds.width * 0.8, height: 45)
+                    .background(Color("#2B2A2A"))
                     .foregroundColor(.white)
-                    .background(Color.black)
                     .cornerRadius(16)
 
                     if let errorMessage = errorMessage {
@@ -45,9 +50,9 @@ struct HomeScreen: View {
                             .padding()
                     }
 
-                    Spacer()
                 }
-                .padding(.bottom, 200)
+                .padding(.bottom, 100)
+                .frame(height: UIScreen.main.bounds.height*0.7)
             }
             .navigationTitle("Welcome")
             .tint(.red)
@@ -83,7 +88,6 @@ struct HomeScreen: View {
                 } else {
                     isSignedIn = true
                     print("Signed in with Google and Firebase!")
-                    // You may want to navigate to a different view here
                 }
             }
         }
@@ -93,12 +97,13 @@ struct HomeScreen: View {
 struct CustomButton: View {
     var title: String
     var action: () -> Void
+    var backgroundColor: String
 
     var body: some View {
         Button(action: action) {
             Text(title)
                 .frame(width: UIScreen.main.bounds.width * 0.8, height: 45)
-                .background(Color.orange)
+                .background(Color(backgroundColor))
                 .cornerRadius(16)
                 .foregroundColor(.white)
         }
