@@ -23,10 +23,21 @@ struct HomeScreen: View {
                 Image(.spiderMan)
                     .resizable()
                     .ignoresSafeArea()
-                VStack(spacing: 20) {
+                VStack(spacing: 25) {
                     Spacer()
                     NavigationLink(destination: SignInScreenView()) {
-                        CustomButton(title: "Sign In", action: {}, backgroundColor: "#BD4925")
+                        Text("Sign In")
+                            .frame(width: UIScreen.main.bounds.width * 0.8, height: 45)
+                            .background(Color("#BD4925"))
+                            .cornerRadius(16)
+                            .foregroundColor(.white)
+                    }
+                    NavigationLink(destination: SignUpScreenView()) {
+                        Text("Sign Up")
+                            .frame(width: UIScreen.main.bounds.width * 0.8, height: 45)
+                            .background(Color("#BD4925"))
+                            .cornerRadius(16)
+                            .foregroundColor(.white)
                     }
                     Button {
                         signInWithGoogle()
@@ -47,14 +58,18 @@ struct HomeScreen: View {
                     if let errorMessage = errorMessage {
                         Text(errorMessage)
                             .foregroundColor(.red)
-                            .padding()
+                            .frame(width: UIScreen.main.bounds.width * 0.8, height: 150)
+                    } else {
+                        Rectangle()
+                            .frame(height: 150)
+                            .opacity(0)
+
                     }
 
                 }
-                .padding(.bottom, 100)
                 .frame(height: UIScreen.main.bounds.height*0.7)
             }
-            .navigationTitle("Welcome")
+            .navigationTitle("back")
             .tint(.red)
         }
     }
@@ -94,21 +109,7 @@ struct HomeScreen: View {
     }
 }
 
-struct CustomButton: View {
-    var title: String
-    var action: () -> Void
-    var backgroundColor: String
 
-    var body: some View {
-        Button(action: action) {
-            Text(title)
-                .frame(width: UIScreen.main.bounds.width * 0.8, height: 45)
-                .background(Color(backgroundColor))
-                .cornerRadius(16)
-                .foregroundColor(.white)
-        }
-    }
-}
 
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
