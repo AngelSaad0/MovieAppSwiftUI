@@ -25,6 +25,7 @@
 		A99CEFDA2CA4FD7400926610 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = A99CEFD92CA4FD7400926610 /* GoogleSignIn */; };
 		A99CEFDC2CA4FD7400926610 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A99CEFDB2CA4FD7400926610 /* GoogleSignInSwift */; };
 		A99CEFE02CA5022400926610 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A99CEFDF2CA5022400926610 /* FirebaseAuth */; };
+		C63A3A522CA5D19500965111 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63A3A512CA5D19500965111 /* MoviesView.swift */; };
 		C688997E2CA5109600E1F1B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C688997D2CA5109600E1F1B1 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		A99CEFB32CA4DA5F00926610 /* SignUpScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenView.swift; sourceTree = "<group>"; };
 		A99CEFBA2CA4F1FD00926610 /* MovieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApp.swift; sourceTree = "<group>"; };
 		A99CEFBE2CA4F24A00926610 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		C63A3A512CA5D19500965111 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
 		C688997D2CA5109600E1F1B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 				A99CEFBE2CA4F24A00926610 /* UserData.swift */,
 				A99CEFB12CA4DA5100926610 /* SignInScreenView.swift */,
 				A99CEFB32CA4DA5F00926610 /* SignUpScreenView.swift */,
+				C63A3A512CA5D19500965111 /* MoviesView.swift */,
 				A99CEFA02CA4C51800926610 /* Assets.xcassets */,
 				A99CEFAF2CA4D21A00926610 /* Colors.xcassets */,
 				A99CEFA52CA4C51800926610 /* Persistence.swift */,
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A99CEFBB2CA4F1FD00926610 /* MovieApp.swift in Sources */,
+				C63A3A522CA5D19500965111 /* MoviesView.swift in Sources */,
 				A99CEFA62CA4C51800926610 /* Persistence.swift in Sources */,
 				A99CEFBF2CA4F24A00926610 /* UserData.swift in Sources */,
 				A99CEF9F2CA4C51600926610 /* HomeScreen.swift in Sources */,

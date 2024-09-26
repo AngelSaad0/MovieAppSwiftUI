@@ -14,6 +14,8 @@ struct SignInScreenView: View {
     @State private var confirmPassword: String = ""
     @State private var rememberLogin: Bool = false
 
+    @State private var presentingMovies = false
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -64,9 +66,9 @@ struct SignInScreenView: View {
                             }
                             .tint(.red)
                             Button(action: {
-
+                                presentingMovies = true
                             }, label : {
-                                Text("Sign up")
+                                Text("Sign In")
                                     .foregroundColor(.white)
                                     .frame(width: UIScreen.main.bounds.width * 0.8, height: 50)
                                     .background(Color.red)
@@ -80,6 +82,10 @@ struct SignInScreenView: View {
                     .frame(width: UIScreen.main.bounds.width*0.94,height: 400)
                 }
             }.background(.clear)
+            .fullScreenCover(isPresented: $presentingMovies) {
+                MoviesView()
+            }
+
         }
     }
 
