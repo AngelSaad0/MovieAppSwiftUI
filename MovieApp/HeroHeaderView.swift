@@ -10,7 +10,7 @@ struct HeroHeaderView: View {
     private var networkManager = NetworkManager()
     @State private var currentIndex = 0
     let baseImageUrl = "https://image.tmdb.org/t/p/w500"
-    let constantWidth = UIScreen.main.bounds.width*0.9
+    let constantWidth = UIScreen.main.bounds.width - 32 /* *0.9 */
     @State private var posterPath:String?
 
     var body: some View {
@@ -21,8 +21,8 @@ struct HeroHeaderView: View {
                 AsyncImage(url: URL(string:fullPath)) { image in
                     ZStack {
                         image.resizable().aspectRatio(contentMode: .fill)
-                            .frame(maxWidth:.infinity)
-                            .frame(height: 300)
+//                            .frame(maxWidth:.infinity)
+                            .frame(width: constantWidth, height: constantWidth * 1.5)
                             .cornerRadius(8)
 //                        VStack(spacing:20){
 //                            Spacer()

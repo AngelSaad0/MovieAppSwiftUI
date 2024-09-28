@@ -7,7 +7,8 @@
 import SwiftUI
 struct MostView:View {
     let movieEndPoint:MovieApi
-     var networkManager = NetworkManager()
+    let title: String
+    var networkManager = NetworkManager()
     @State private var currentIndex = 0
     let baseImageUrl = "https://image.tmdb.org/t/p/w500"
     let constantWidth = UIScreen.main.bounds.width*0.4
@@ -16,6 +17,15 @@ struct MostView:View {
     var body: some View {
         ZStack {
             if let movieList = movieList {
+                VStack {
+                    HStack {
+                        Text(title)
+                            .font(.title2.bold())
+                            .padding(.bottom, 10)
+                            .padding(.top, 30)
+                        Spacer()
+                    }
+                    .padding(.horizontal)
                     ScrollView(.horizontal) {
                         LazyHStack (spacing:10){
                             ForEach(movieList.indices,id:\.self) { index in
@@ -26,9 +36,9 @@ struct MostView:View {
                                         image.resizable().aspectRatio(contentMode: .fit)
                                             .frame(width: constantWidth ,height: constantWidth*1.5)
                                             .cornerRadius(8)
-
+                                        
                                     }
-
+                                    
                                 } placeholder: {
                                     ProgressView("Loading...")
                                         .frame(width: constantWidth ,height: constantWidth*1.5)
@@ -37,10 +47,11 @@ struct MostView:View {
                             }
                         }
                         .padding(.horizontal)
-
+                        
                     }
                     .onAppear{
                     }
+                }
 
 
             } else {
@@ -58,4 +69,8 @@ struct MostView:View {
             movieList = movies?.results
         }
     }
+}
+
+#Preview {
+    MostView(movieEndPoint: .popular, title: "Popular Movies")
 }

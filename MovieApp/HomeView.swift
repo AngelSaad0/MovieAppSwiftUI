@@ -24,12 +24,12 @@ struct HomeView: View {
                 else {
                     VStack(spacing: 20) {
                         HeroHeaderView()
-                        MostView(movieEndPoint: .trendingTV)
-                        MostView(movieEndPoint: .trendingMovie)
-                        MostView(movieEndPoint: .topRated)
-                        MostView(movieEndPoint: .upcoming)
-                        MostView(movieEndPoint: .popular)
-                        MostView(movieEndPoint: .now_playing)
+                        MostView(movieEndPoint: .trendingTV, title: "Trending TV Shows")
+                        MostView(movieEndPoint: .trendingMovie, title: "Trending Movies")
+                        MostView(movieEndPoint: .topRated, title: "Top Rated Movies")
+                        MostView(movieEndPoint: .upcoming, title: "Upcoming Movies")
+                        MostView(movieEndPoint: .popular, title: "Popular Movies")
+                        MostView(movieEndPoint: .now_playing, title: "Now Playing Movies")
 
 
                     }
