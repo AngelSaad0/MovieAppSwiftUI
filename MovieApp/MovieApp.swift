@@ -24,7 +24,7 @@ struct MovieApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            HomeScreen()
+            LoginView()
                 .environmentObject(userData)
                 .onOpenURL { url in
                     GIDSignIn.sharedInstance.handle(url)

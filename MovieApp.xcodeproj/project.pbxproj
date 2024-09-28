@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A92F08292CA831B1000820B2 /* MovieApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92F08282CA831B1000820B2 /* MovieApi.swift */; };
+		A92F082B2CA831CC000820B2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92F082A2CA831CC000820B2 /* NetworkManager.swift */; };
+		A96B5D102CA77FA800925E1D /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96B5D0F2CA77FA800925E1D /* MainTabBarView.swift */; };
+		A96B5D122CA7823600925E1D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96B5D112CA7823600925E1D /* HomeView.swift */; };
+		A96B5D142CA7824C00925E1D /* UpComingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96B5D132CA7824C00925E1D /* UpComingView.swift */; };
+		A96B5D162CA7825C00925E1D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96B5D152CA7825C00925E1D /* SearchView.swift */; };
+		A96B5D182CA782BF00925E1D /* DownloadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96B5D172CA782BF00925E1D /* DownloadsView.swift */; };
+		A96B5D1A2CA7918800925E1D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96B5D192CA7918800925E1D /* LoginView.swift */; };
+		A96B5D1C2CA797DC00925E1D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96B5D1B2CA797DC00925E1D /* RegisterView.swift */; };
+		A96B5D1E2CA7A78200925E1D /* LunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A96B5D1D2CA7A78200925E1D /* LunchScreen.storyboard */; };
 		A99CEF9F2CA4C51600926610 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99CEF9E2CA4C51600926610 /* HomeScreen.swift */; };
 		A99CEFA12CA4C51800926610 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99CEFA02CA4C51800926610 /* Assets.xcassets */; };
 		A99CEFA42CA4C51800926610 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99CEFA32CA4C51800926610 /* Preview Assets.xcassets */; };
@@ -25,11 +35,23 @@
 		A99CEFDA2CA4FD7400926610 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = A99CEFD92CA4FD7400926610 /* GoogleSignIn */; };
 		A99CEFDC2CA4FD7400926610 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A99CEFDB2CA4FD7400926610 /* GoogleSignInSwift */; };
 		A99CEFE02CA5022400926610 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A99CEFDF2CA5022400926610 /* FirebaseAuth */; };
+		A9BD63FA2CA746F4007DE9F3 /* MovieZoneLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BD63F92CA746F4007DE9F3 /* MovieZoneLogo.swift */; };
+		A9BD640C2CA7513A007DE9F3 /* IBMPlexMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9BD640B2CA7513A007DE9F3 /* IBMPlexMono-Bold.ttf */; };
 		C63A3A522CA5D19500965111 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63A3A512CA5D19500965111 /* MoviesView.swift */; };
 		C688997E2CA5109600E1F1B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C688997D2CA5109600E1F1B1 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A92F08282CA831B1000820B2 /* MovieApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApi.swift; sourceTree = "<group>"; };
+		A92F082A2CA831CC000820B2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A96B5D0F2CA77FA800925E1D /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		A96B5D112CA7823600925E1D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A96B5D132CA7824C00925E1D /* UpComingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingView.swift; sourceTree = "<group>"; };
+		A96B5D152CA7825C00925E1D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		A96B5D172CA782BF00925E1D /* DownloadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsView.swift; sourceTree = "<group>"; };
+		A96B5D192CA7918800925E1D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A96B5D1B2CA797DC00925E1D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		A96B5D1D2CA7A78200925E1D /* LunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LunchScreen.storyboard; sourceTree = "<group>"; };
 		A99CEF992CA4C51600926610 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99CEF9E2CA4C51600926610 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		A99CEFA02CA4C51800926610 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +63,8 @@
 		A99CEFB32CA4DA5F00926610 /* SignUpScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreenView.swift; sourceTree = "<group>"; };
 		A99CEFBA2CA4F1FD00926610 /* MovieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApp.swift; sourceTree = "<group>"; };
 		A99CEFBE2CA4F24A00926610 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		A9BD63F92CA746F4007DE9F3 /* MovieZoneLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieZoneLogo.swift; sourceTree = "<group>"; };
+		A9BD640B2CA7513A007DE9F3 /* IBMPlexMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Bold.ttf"; sourceTree = "<group>"; };
 		C63A3A512CA5D19500965111 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
 		C688997D2CA5109600E1F1B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,7 +93,7 @@
 			children = (
 				A99CEF9B2CA4C51600926610 /* MovieApp */,
 				A99CEF9A2CA4C51600926610 /* Products */,
-				A99CEFDE2CA5022400926610 /* Frameworks */,
+				AAB315EA26B5290F534F8BC0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,9 +108,21 @@
 		A99CEF9B2CA4C51600926610 /* MovieApp */ = {
 			isa = PBXGroup;
 			children = (
+				A9BD640D2CA7524C007DE9F3 /* Fonts */,
 				C688997D2CA5109600E1F1B1 /* GoogleService-Info.plist */,
-				A99CEFBA2CA4F1FD00926610 /* MovieApp.swift */,
 				A99CEF9E2CA4C51600926610 /* HomeScreen.swift */,
+				A96B5D192CA7918800925E1D /* LoginView.swift */,
+				A92F08282CA831B1000820B2 /* MovieApi.swift */,
+				A92F082A2CA831CC000820B2 /* NetworkManager.swift */,
+				A96B5D1B2CA797DC00925E1D /* RegisterView.swift */,
+				A99CEFBA2CA4F1FD00926610 /* MovieApp.swift */,
+				A9BD63F92CA746F4007DE9F3 /* MovieZoneLogo.swift */,
+				A96B5D132CA7824C00925E1D /* UpComingView.swift */,
+				A96B5D152CA7825C00925E1D /* SearchView.swift */,
+				A96B5D112CA7823600925E1D /* HomeView.swift */,
+				A96B5D172CA782BF00925E1D /* DownloadsView.swift */,
+				A96B5D0F2CA77FA800925E1D /* MainTabBarView.swift */,
+				A96B5D1D2CA7A78200925E1D /* LunchScreen.storyboard */,
 				A99CEFBE2CA4F24A00926610 /* UserData.swift */,
 				A99CEFB12CA4DA5100926610 /* SignInScreenView.swift */,
 				A99CEFB32CA4DA5F00926610 /* SignUpScreenView.swift */,
@@ -108,11 +144,19 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A99CEFDE2CA5022400926610 /* Frameworks */ = {
+		A9BD640D2CA7524C007DE9F3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A9BD640B2CA7513A007DE9F3 /* IBMPlexMono-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AAB315EA26B5290F534F8BC0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Frameworks;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,7 +215,7 @@
 			mainGroup = A99CEF902CA4C51600926610;
 			packageReferences = (
 				A99CEFC82CA4FC0D00926610 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				A99CEFD82CA4FD7400926610 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				A99CEFD82CA4FD7400926610 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS.git" */,
 			);
 			productRefGroup = A99CEF9A2CA4C51600926610 /* Products */;
 			projectDirPath = "";
@@ -190,7 +234,9 @@
 				A99CEFB02CA4D21A00926610 /* Colors.xcassets in Resources */,
 				C688997E2CA5109600E1F1B1 /* GoogleService-Info.plist in Resources */,
 				A99CEFA42CA4C51800926610 /* Preview Assets.xcassets in Resources */,
+				A9BD640C2CA7513A007DE9F3 /* IBMPlexMono-Bold.ttf in Resources */,
 				A99CEFA12CA4C51800926610 /* Assets.xcassets in Resources */,
+				A96B5D1E2CA7A78200925E1D /* LunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,14 +247,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92F082B2CA831CC000820B2 /* NetworkManager.swift in Sources */,
 				A99CEFBB2CA4F1FD00926610 /* MovieApp.swift in Sources */,
 				C63A3A522CA5D19500965111 /* MoviesView.swift in Sources */,
+				A96B5D182CA782BF00925E1D /* DownloadsView.swift in Sources */,
+				A96B5D1A2CA7918800925E1D /* LoginView.swift in Sources */,
 				A99CEFA62CA4C51800926610 /* Persistence.swift in Sources */,
 				A99CEFBF2CA4F24A00926610 /* UserData.swift in Sources */,
 				A99CEF9F2CA4C51600926610 /* HomeScreen.swift in Sources */,
+				A96B5D122CA7823600925E1D /* HomeView.swift in Sources */,
+				A96B5D102CA77FA800925E1D /* MainTabBarView.swift in Sources */,
 				A99CEFB22CA4DA5100926610 /* SignInScreenView.swift in Sources */,
+				A96B5D162CA7825C00925E1D /* SearchView.swift in Sources */,
 				A99CEFA92CA4C51800926610 /* MovieApp.xcdatamodeld in Sources */,
 				A99CEFB42CA4DA5F00926610 /* SignUpScreenView.swift in Sources */,
+				A96B5D1C2CA797DC00925E1D /* RegisterView.swift in Sources */,
+				A96B5D142CA7824C00925E1D /* UpComingView.swift in Sources */,
+				A9BD63FA2CA746F4007DE9F3 /* MovieZoneLogo.swift in Sources */,
+				A92F08292CA831B1000820B2 /* MovieApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,8 +402,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LunchScreen.storyboard;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -377,8 +432,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MovieApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LunchScreen.storyboard;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -428,7 +482,7 @@
 				version = 10.0.0;
 			};
 		};
-		A99CEFD82CA4FD7400926610 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+		A99CEFD82CA4FD7400926610 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
 			requirement = {
@@ -466,12 +520,12 @@
 		};
 		A99CEFD92CA4FD7400926610 /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A99CEFD82CA4FD7400926610 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			package = A99CEFD82CA4FD7400926610 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS.git" */;
 			productName = GoogleSignIn;
 		};
 		A99CEFDB2CA4FD7400926610 /* GoogleSignInSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A99CEFD82CA4FD7400926610 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			package = A99CEFD82CA4FD7400926610 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS.git" */;
 			productName = GoogleSignInSwift;
 		};
 		A99CEFDF2CA5022400926610 /* FirebaseAuth */ = {
