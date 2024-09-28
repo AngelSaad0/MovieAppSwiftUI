@@ -13,12 +13,14 @@ import FirebaseAuth
 
 
 struct LoginView: View {
+    @AppStorage("continueAsAGuest") var continueAsAGuest: Bool = false
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var isShowPassword: Bool = false
     @State private var errorMessage: String?
     @State private var isSignedIn = false
     @State private var isSkipPressed = false
+    @Environment(\.presentationMode) var presentationMode
 
 
 
@@ -139,17 +141,18 @@ struct LoginView: View {
                             }
                         }
                         .padding(.bottom, 20)
-                        NavigationLink(destination: MainTabBarView()) {
+                            Button {
+                                continueAsAGuest = true
+                                isSkipPressed = true
 
-                            Text("Skip for now")
-                                .frame(width: UIScreen.main.bounds.width * 0.8, height: 45)
-                                .foregroundColor(.white)
-
-                                .overlay{
-                                    RoundedRectangle(cornerRadius: 8)
-                                        .stroke(Color("#BD4925"),lineWidth:2)
-
-                                }
+                            } label: {
+                                Text("Skip for now")
+                                    .frame(width: UIScreen.main.bounds.width * 0.8, height: 45)
+                                    .foregroundColor(.white)
+                                    .overlay{
+                                        RoundedRectangle(cornerRadius: 8)
+                                            .stroke(Color("#BD4925"),lineWidth:2)
+                            }
                         }
                         if let errorMessage = errorMessage {
                             Text(errorMessage)

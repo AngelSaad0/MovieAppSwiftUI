@@ -17,6 +17,9 @@ enum MovieApi {
     case topRated
     case trendingTV
     case trendingMovie
+    case moviePlayVideos(id:Int)
+    case moviePlayTV(id:Int)
+
     case details(id:Int)
     private var path: String {
         switch self {
@@ -34,11 +37,15 @@ enum MovieApi {
             return "trending/movie/week"
         case .trendingTV:
             return "trending/tv/week"
+        case .moviePlayVideos(id: let id):
+            return "\(id)/videos"
+        case .moviePlayTV(id: let id):
+            return "tv/\(id)/videos"
         }
     }
     private var endpoint: String {
             switch self {
-            case .trendingMovie,.trendingTV:
+            case .trendingMovie,.trendingTV,.moviePlayTV:
                 return ""
             default:
                 return MovieApi.moviePath

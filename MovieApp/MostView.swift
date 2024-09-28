@@ -31,19 +31,21 @@ struct MostView:View {
                             ForEach(movieList.indices,id:\.self) { index in
                                 let url = movieList[index].posterPath
                                 let fullPath = baseImageUrl + url!
+                                NavigationLink(destination: MovieDetailsView(movieID:movieList[index].id, isMovie: !title.contains("TV"))) {
                                 AsyncImage(url: URL(string:fullPath)) { image in
                                     ZStack {
                                         image.resizable().aspectRatio(contentMode: .fit)
                                             .frame(width: constantWidth ,height: constantWidth*1.5)
                                             .cornerRadius(8)
-                                        
+
                                     }
-                                    
+
                                 } placeholder: {
                                     ProgressView("Loading...")
                                         .frame(width: constantWidth ,height: constantWidth*1.5)
                                 }
                                 .id(index)
+                            }
                             }
                         }
                         .padding(.horizontal)

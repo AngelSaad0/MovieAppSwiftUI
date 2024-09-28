@@ -11,20 +11,25 @@ import FirebaseCore
 import GoogleSignIn
 
 class AppDelegate: NSObject, UIApplicationDelegate {
-  func application(_ application: UIApplication,
-                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    FirebaseApp.configure()
-    return true
-  }
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        FirebaseApp.configure()
+        return true
+    }
 }
 
 @main
 struct MovieApp: App {
+    @AppStorage("continueAsAGuest") var continueAsAGuest: Bool = false
+    @AppStorage("isLogin") var isLogin: Bool = false
+
     @StateObject var userData = UserData()
+
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            contentView()
                 .environmentObject(userData)
                 .onOpenURL { url in
                     GIDSignIn.sharedInstance.handle(url)
@@ -41,5 +46,14 @@ struct MovieApp: App {
                 }
         }
     }
-}
 
+    @ViewBuilder
+    func contentView() -> some View {
+            if continueAsAGuest || isLogin {
+                MainTabBarView() // Your main view for logged-in users
+            } else {
+                LoginView() // Show login options if not logged in
+            }
+
+    }
+}
