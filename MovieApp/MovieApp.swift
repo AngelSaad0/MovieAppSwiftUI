@@ -21,7 +21,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct MovieApp: App {
     @AppStorage("continueAsAGuest") var continueAsAGuest: Bool = false
-    @AppStorage("isLogin") var isLogin: Bool = false
+    @AppStorage("loggedIn") var loggedIn: Bool = false
 
     @StateObject var userData = UserData()
 
@@ -49,10 +49,12 @@ struct MovieApp: App {
 
     @ViewBuilder
     func contentView() -> some View {
-            if continueAsAGuest || isLogin {
+            if continueAsAGuest || loggedIn {
                 MainTabBarView() // Your main view for logged-in users
             } else {
-                LoginView() // Show login options if not logged in
+                NavigationView {
+                    LoginView() // Show login options if not logged in
+                }
             }
 
     }

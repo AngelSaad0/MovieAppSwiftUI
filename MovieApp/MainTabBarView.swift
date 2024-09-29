@@ -11,14 +11,11 @@ struct MainTabBarView: View {
 
     var body: some View {
         TabView {
-            NavigationView {
-                HomeView()
-                    .navigationTitle("Home")
-            }
-            .tabItem {
-                Image(systemName: "house")
-                Text("Home")
-            }
+            HomeView()
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Home")
+                }
 
             NavigationView {
                 UpComingView()

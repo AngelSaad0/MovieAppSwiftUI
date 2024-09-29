@@ -37,6 +37,7 @@ struct HomeView: View {
                 }
 
             }
+            .navigationTitle("Home")
             .navigationBarItems(
                 leading: Image(.pngegg).resizable().frame(width: 40, height: 40),
                 trailing: HStack {
@@ -51,6 +52,7 @@ struct HomeView: View {
                 }
             )
         }
+        .tint(.red)
     }
 }
 
