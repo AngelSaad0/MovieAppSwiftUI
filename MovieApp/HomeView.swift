@@ -30,25 +30,29 @@ struct HomeView: View {
                         MostView(movieEndPoint: .upcoming, title: "Upcoming Movies")
                         MostView(movieEndPoint: .popular, title: "Popular Movies")
                         MostView(movieEndPoint: .now_playing, title: "Now Playing Movies")
-
-
                     }
-
                 }
 
             }
             .navigationTitle("Home")
             .navigationBarItems(
-                leading: Image(.pngegg).resizable().frame(width: 40, height: 40),
+                leading: Image(.pngegg).resizable().frame(width: 28, height: 28),
                 trailing: HStack {
-                    Button(action: { }) {
-                        Image(systemName: "person").font(.title2)
-                            .foregroundColor(.red.opacity(0.6))
+                    NavigationLink(destination:LoginView()){
+                        Image(systemName: "person")
+                            .resizable()
+                            .font(.title2)
+                            .foregroundColor(.red)
+                            .frame(width: 20, height: 20)
                     }
-                    Button(action: { }) {
-                        Image(systemName: "play.rectangle").font(.title2)
-                            .foregroundColor(.red.opacity(0.6))
+                    NavigationLink(destination:DownloadsView()){
+                        Image(systemName: "play.rectangle")
+                            .resizable()
+                            .font(.title2)
+                            .foregroundColor(.red)
+                            .frame(width: 28, height: 20)
                     }
+
                 }
             )
         }
