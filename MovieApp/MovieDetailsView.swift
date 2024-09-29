@@ -51,9 +51,7 @@ struct MovieDetailsView: View {
 
                     Spacer()
                 }
-                Button(action: {
-                    print("Download tapped")
-                }) {
+                Button(action: downloadVideo) {
                     Text("Download")
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -107,7 +105,61 @@ struct WebView: UIViewRepresentable {
     }
 }
 
-
+func downloadVideo() {
+    var isDownloading = false
+    var downloadStatus = ""
+    
+    
+    guard let url = URL(string: "") else {return}
+    let session = URLSession(configuration: .default)
+    let request = URLRequest(url: url)
+    
+    isDownloading = true
+    downloadStatus = "Starting download..."
+    
+    let task = session.downloadTask(with: request) { localURL, response, error in
+        if let error = error {
+            print(error.localizedDescription)
+            DispatchQueue.main.async {
+                downloadStatus = "Error: \(error.localizedDescription)"
+                isDownloading = false
+            }
+            return
+        }
+        
+        if let localURL = localURL {
+            // Get the destination path to store the video
+            let fileManager = FileManager.default
+            let documentsDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
+            let destinationURL = documentsDirectory.appendingPathComponent("downloaded_video.mp4")
+            
+            do {
+                // Remove file if it already exists
+                if fileManager.fileExists(atPath: destinationURL.path) {
+                    try fileManager.removeItem(at: destinationURL)
+                }
+                
+                // Move the downloaded file to the destination URL
+                try fileManager.moveItem(at: localURL, to: destinationURL)
+                DispatchQueue.main.async {
+                    downloadStatus = "Download completed: \(destinationURL)"
+                }
+            } catch {
+                DispatchQueue.main.async {
+                    downloadStatus = "File error: \(error.localizedDescription)"
+                }
+            }
+        }
+        DispatchQueue.main.async {
+            isDownloading = false
+        }
+    }
+    task.resume()
+    
+    
+    
+    
+}
 
 
 #Preview {
