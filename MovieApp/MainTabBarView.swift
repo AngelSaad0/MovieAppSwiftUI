@@ -8,41 +8,28 @@
 import SwiftUI
 
 struct MainTabBarView: View {
-
+    
     var body: some View {
         TabView {
             HomeView()
                 .tabItem {
-                    Image(systemName: "house")
-                    Text("Home")
+                    Label("Home", systemImage: "house")
                 }
-
-            NavigationView {
-                UpComingView()
-                    .navigationTitle("Coming Soon")
-            }
-            .tabItem {
-                Image(systemName: "play.circle")
-                Text("Coming Soon")
-            }
-
-            NavigationView {
-                SearchView()
-                    .navigationTitle("Top Search")
-            }
-            .tabItem {
-                Image(systemName: "magnifyingglass")
-                Text("Top Search")
-            }
-
-            NavigationView {
-                DownloadsView()
-                    .navigationTitle("Downloads")
-            }
-            .tabItem {
-                Image(systemName: "arrow.down.to.line")
-                Text("Downloads")
-            }
+            
+            UpComingView()
+                .tabItem {
+                    Label("Coming Soon", systemImage: "play.circle")
+                }
+            
+            SearchView()
+                .tabItem {
+                    Label("Top Search", systemImage: "magnifyingglass")
+                }
+            
+            DownloadsView()
+                .tabItem {
+                    Label("Downloads", systemImage: "arrow.down.to.line")
+                }
         }
         .accentColor(.primary)
     }
