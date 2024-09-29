@@ -25,8 +25,9 @@ struct MainTabBarView: View {
                 .tabItem {
                     Label("Top Search", systemImage: "magnifyingglass")
                 }
-            
-            DownloadsView()
+            NavigationView{
+                DownloadsView()
+            }
                 .tabItem {
                     Label("Downloads", systemImage: "arrow.down.to.line")
                 }

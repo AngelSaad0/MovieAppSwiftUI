@@ -27,7 +27,7 @@ struct RegisterView: View {
             Image(.back)
                 .resizable()
                 .ignoresSafeArea()
-            Color.black.opacity(0.7).edgesIgnoringSafeArea(.all)
+            Color.black.opacity(0.82).edgesIgnoringSafeArea(.all)
             ScrollView {
                 Image(.pngegg)
                     .resizable()

@@ -29,7 +29,7 @@ struct LoginView: View {
             Image(.back)
                 .resizable()
                 .ignoresSafeArea()
-            Color.black.opacity(0.7).edgesIgnoringSafeArea(.all)
+            Color.black.opacity(0.8).edgesIgnoringSafeArea(.all)
             ScrollView {
                 VStack(spacing:8) {
                     Text("Welcome")

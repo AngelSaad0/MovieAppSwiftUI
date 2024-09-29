@@ -38,7 +38,7 @@ struct HomeView: View {
             .navigationBarItems(
                 leading: Image(.pngegg).resizable().frame(width: 28, height: 28),
                 trailing: HStack {
-                    NavigationLink(destination:LoginView()){
+                    NavigationLink(destination:AccountSetting()){
                         Image(systemName: "person")
                             .resizable()
                             .font(.title2)

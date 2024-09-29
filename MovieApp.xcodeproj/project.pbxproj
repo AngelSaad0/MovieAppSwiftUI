@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A92F08292CA831B1000820B2 /* MovieApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92F08282CA831B1000820B2 /* MovieApi.swift */; };
 		A92F082B2CA831CC000820B2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92F082A2CA831CC000820B2 /* NetworkManager.swift */; };
+		A96A34572CA9D1EB00EA8E25 /* AccountSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A34562CA9D1EB00EA8E25 /* AccountSetting.swift */; };
 		A96B5D102CA77FA800925E1D /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96B5D0F2CA77FA800925E1D /* MainTabBarView.swift */; };
 		A96B5D122CA7823600925E1D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96B5D112CA7823600925E1D /* HomeView.swift */; };
 		A96B5D142CA7824C00925E1D /* UpComingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96B5D132CA7824C00925E1D /* UpComingView.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		A92F08282CA831B1000820B2 /* MovieApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApi.swift; sourceTree = "<group>"; };
 		A92F082A2CA831CC000820B2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A96A34562CA9D1EB00EA8E25 /* AccountSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSetting.swift; sourceTree = "<group>"; };
 		A96B5D0F2CA77FA800925E1D /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		A96B5D112CA7823600925E1D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A96B5D132CA7824C00925E1D /* UpComingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				A92F082A2CA831CC000820B2 /* NetworkManager.swift */,
 				A9CBE9E92CA8953600D1F000 /* MovieDetails.swift */,
 				A9CBE9E12CA8485B00D1F000 /* Movies.swift */,
+				A96A34562CA9D1EB00EA8E25 /* AccountSetting.swift */,
 				A99CEFBA2CA4F1FD00926610 /* MovieApp.swift */,
 				A9CBE9ED2CA8B1DD00D1F000 /* MovieVideoModel.swift */,
 				A9BD63F92CA746F4007DE9F3 /* MovieZoneLogo.swift */,
@@ -271,6 +274,7 @@
 				A9CBE9EC2CA8A34200D1F000 /* MovieDetailsView.swift in Sources */,
 				A96B5D182CA782BF00925E1D /* DownloadsView.swift in Sources */,
 				A96B5D1A2CA7918800925E1D /* LoginView.swift in Sources */,
+				A96A34572CA9D1EB00EA8E25 /* AccountSetting.swift in Sources */,
 				A9CBE9EA2CA8953600D1F000 /* MovieDetails.swift in Sources */,
 				A9CBE9E82CA87DB000D1F000 /* HeroHeaderView.swift in Sources */,
 				A99CEFA62CA4C51800926610 /* Persistence.swift in Sources */,
